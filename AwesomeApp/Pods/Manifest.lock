@@ -1,0 +1,32 @@
+PODS:
+  - AFNetworkLayer (0.0.1):
+    - Alamofire (= 4.8.2)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Alamofire (4.8.2)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+
+DEPENDENCIES:
+  - AFNetworkLayer (from `../AFNetworkLayer`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - RxCocoa
+    - RxSwift
+
+EXTERNAL SOURCES:
+  AFNetworkLayer:
+    :path: "../AFNetworkLayer"
+
+SPEC CHECKSUMS:
+  AFNetworkLayer: 9c33f09c040c3e1bf0acea9ffd24ce72a70103b0
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+
+PODFILE CHECKSUM: a5ea6dc807a5a32e478cf131dd916a282ff206c9
+
+COCOAPODS: 1.5.3
