@@ -29,7 +29,7 @@ public class PostsViewModel {
         service.getPosts(userId: 1)
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { (posts) in
-                print("Lists of posts: ", posts)
+                //print("Lists of posts: ", posts)
                 self.posts.onNext(posts)
             }, onError: { (error) in
                 switch error {

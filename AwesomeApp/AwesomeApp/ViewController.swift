@@ -9,23 +9,51 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SnapKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        //tableView.register(PostsCell.self, forCellReuseIdentifier: PostsCell.identifier)
+        tableView.register(cell: PostsCell.self)
+        tableView.estimatedRowHeight = 120
+        
+        self.view.addSubview(tableView)
+        tableView.snp.makeConstraints({ (maker: ConstraintMaker) in
+            maker.edges.equalTo(view.safeAreaLayoutGuide)
+        })
+        return tableView
+    }()
     
-    private var viewModel = PostsViewModel(postsService: PostsService())
+    private var viewModel: PostsViewModel!
     private let dispodeBag = DisposeBag()
-
+    
+    public init(viewModel: PostsViewModel) {
+        super.init(nibName: nil, bundle: nil)
+        self.viewModel = viewModel
+    }
+    
+    override func loadView() {
+        super.loadView()
+        view.backgroundColor = .white
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Posts"
         bindTableView()
         viewModel.loadPosts()
     }
     
     private func bindTableView() {
         tableView.estimatedRowHeight = 50
-        viewModel.posts.asObservable().bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: PostsCell.self)) { row, element, cell in
+        viewModel.posts.asObservable().bind(to: tableView.rx.items(cellIdentifier: PostsCell.identifier, cellType: PostsCell.self)) { row, element, cell in
             cell.setup(title: element.title, description: element.body)
         }.disposed(by: dispodeBag)
     }

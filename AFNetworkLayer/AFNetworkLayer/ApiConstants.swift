@@ -25,6 +25,10 @@ public struct ApiConstants {
         case acceptEncoding = "Accept-Encoding"
     }
     
+    enum NetworkError: String, Error {
+        case noConnection = "No internet connection"
+    }
+    
     //The content type (JSON)
     enum ContentType: String {
         case json = "application/json"

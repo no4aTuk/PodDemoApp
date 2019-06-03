@@ -7,5 +7,5 @@ target 'AwesomeApp' do
 
   # Pods for AwesomeApp
   pod 'AFNetworkLayer', :path => '../AFNetworkLayer'
-
+  pod 'SnapKit', '~> 4.0.0'
 end

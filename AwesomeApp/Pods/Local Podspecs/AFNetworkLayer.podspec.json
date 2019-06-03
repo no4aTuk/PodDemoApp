@@ -13,9 +13,8 @@
   },
   "source_files": [
     "AFNetworkLayer",
-    "AFNetworkLayer/**/*.{h,m, swift}"
+    "AFNetworkLayer"
   ],
-  "exclude_files": "AFNetworkLayer/Exclude",
   "dependencies": {
     "Alamofire": [
       "4.8.2"
