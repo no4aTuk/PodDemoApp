@@ -137,8 +137,11 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  s.static_framework = true
   s.dependency 'Alamofire', '4.8.2'
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'RxCocoa', '~> 4.0'
+  s.dependency 'YandexMapKit', '3.3.1'
+  s.dependency 'YandexMapKitSearch', '3.3.1'
 
 end

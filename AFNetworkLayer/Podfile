@@ -9,5 +9,6 @@ target 'AFNetworkLayer' do
   pod 'Alamofire'
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
-
+  pod 'YandexMapKit', '3.3.1'
+  pod 'YandexMapKitSearch', '3.3.1'
 end

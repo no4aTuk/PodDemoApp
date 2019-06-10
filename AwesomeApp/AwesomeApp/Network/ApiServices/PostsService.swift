@@ -9,7 +9,6 @@
 
 import Foundation
 import RxSwift
-import AFNetworkLayer
 
 public struct PostsService {
     public func getPosts(userId: Int) -> Observable<[Post]> {

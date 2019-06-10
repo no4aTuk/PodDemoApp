@@ -3,23 +3,37 @@ PODS:
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
+  - YandexMapKit (3.3.1):
+    - YandexRuntime (~> 3.3)
+  - YandexMapKitSearch (3.3.1):
+    - YandexMapKit (~> 3.3)
+    - YandexRuntime (~> 3.3)
+  - YandexRuntime (3.3.1)
 
 DEPENDENCIES:
   - Alamofire
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - YandexMapKit (= 3.3.1)
+  - YandexMapKitSearch (= 3.3.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - RxCocoa
     - RxSwift
+    - YandexMapKit
+    - YandexMapKitSearch
+    - YandexRuntime
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  YandexMapKit: d91d278f55fa5cced0a946b9ba33431fb5a9665d
+  YandexMapKitSearch: e0fea1d7f20084f355a7ed22f1b4b2c6c8a4bce4
+  YandexRuntime: d7aae40396f41c9b23b17fee1fe6164b886e3679
 
-PODFILE CHECKSUM: 18c3013b4fdca1404e42b410b0068dc614dfcd4a
+PODFILE CHECKSUM: 0ac0ff41dc578a85e567e43f1cd2ddd0702bd856
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

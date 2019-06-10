@@ -3,11 +3,19 @@ PODS:
     - Alamofire (= 4.8.2)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+    - YandexMapKit (= 3.3.1)
+    - YandexMapKitSearch (= 3.3.1)
   - Alamofire (4.8.2)
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
   - SnapKit (4.0.1)
+  - YandexMapKit (3.3.1):
+    - YandexRuntime (~> 3.3)
+  - YandexMapKitSearch (3.3.1):
+    - YandexMapKit (~> 3.3)
+    - YandexRuntime (~> 3.3)
+  - YandexRuntime (3.3.1)
 
 DEPENDENCIES:
   - AFNetworkLayer (from `../AFNetworkLayer`)
@@ -19,17 +27,23 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - SnapKit
+    - YandexMapKit
+    - YandexMapKitSearch
+    - YandexRuntime
 
 EXTERNAL SOURCES:
   AFNetworkLayer:
     :path: "../AFNetworkLayer"
 
 SPEC CHECKSUMS:
-  AFNetworkLayer: 3a23cbaf3f8186755c9c24b75febbc9a487bb735
+  AFNetworkLayer: e59c242cacffe751672ddeb25469f88041ed8c4c
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  YandexMapKit: d91d278f55fa5cced0a946b9ba33431fb5a9665d
+  YandexMapKitSearch: e0fea1d7f20084f355a7ed22f1b4b2c6c8a4bce4
+  YandexRuntime: d7aae40396f41c9b23b17fee1fe6164b886e3679
 
 PODFILE CHECKSUM: 38f9cea05219919ad852fb20006983d9285f47ae
 

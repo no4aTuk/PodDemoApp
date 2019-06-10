@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181247D422A65F5E0076FAAF /* Network.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181247D322A65F5E0076FAAF /* Network.xcassets */; };
+		181247D922A665AC0076FAAF /* BaseApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181247D522A665AC0076FAAF /* BaseApiService.swift */; };
+		181247DA22A665AC0076FAAF /* BaseApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181247D622A665AC0076FAAF /* BaseApiRouter.swift */; };
+		181247DB22A665AC0076FAAF /* ApiConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181247D722A665AC0076FAAF /* ApiConfiguration.swift */; };
+		181247DC22A665AC0076FAAF /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181247D822A665AC0076FAAF /* ApiConstants.swift */; };
 		676BB672229075980022E577 /* AFNetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 676BB670229075980022E577 /* AFNetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		676BB6792290760B0022E577 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BB6782290760B0022E577 /* Constants.swift */; };
-		676BB67B2290762F0022E577 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BB67A2290762F0022E577 /* ApiRouter.swift */; };
-		676BB67D229076580022E577 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BB67C229076580022E577 /* Post.swift */; };
 		676BB67F229076690022E577 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BB67E229076690022E577 /* ApiError.swift */; };
 		676BB6812290768E0022E577 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BB6802290768E0022E577 /* ApiClient.swift */; };
 		E82C533D23F5DEC411C97656 /* Pods_AFNetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8BF00195FCA9C9E620FDA3 /* Pods_AFNetworkLayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181247D322A65F5E0076FAAF /* Network.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Network.xcassets; sourceTree = "<group>"; };
+		181247D522A665AC0076FAAF /* BaseApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiService.swift; sourceTree = "<group>"; };
+		181247D622A665AC0076FAAF /* BaseApiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseApiRouter.swift; sourceTree = "<group>"; };
+		181247D722A665AC0076FAAF /* ApiConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConfiguration.swift; sourceTree = "<group>"; };
+		181247D822A665AC0076FAAF /* ApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
 		676BB66D229075980022E577 /* AFNetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		676BB670229075980022E577 /* AFNetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkLayer.h; sourceTree = "<group>"; };
 		676BB671229075980022E577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		676BB6782290760B0022E577 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		676BB67A2290762F0022E577 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
-		676BB67C229076580022E577 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		676BB67E229076690022E577 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		676BB6802290768E0022E577 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		BB8BF00195FCA9C9E620FDA3 /* Pods_AFNetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,13 +67,15 @@
 		676BB66F229075980022E577 /* AFNetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				181247D722A665AC0076FAAF /* ApiConfiguration.swift */,
+				181247D822A665AC0076FAAF /* ApiConstants.swift */,
+				181247D622A665AC0076FAAF /* BaseApiRouter.swift */,
+				181247D522A665AC0076FAAF /* BaseApiService.swift */,
 				676BB670229075980022E577 /* AFNetworkLayer.h */,
 				676BB671229075980022E577 /* Info.plist */,
-				676BB6782290760B0022E577 /* Constants.swift */,
-				676BB67A2290762F0022E577 /* ApiRouter.swift */,
-				676BB67C229076580022E577 /* Post.swift */,
 				676BB67E229076690022E577 /* ApiError.swift */,
 				676BB6802290768E0022E577 /* ApiClient.swift */,
+				181247D322A65F5E0076FAAF /* Network.xcassets */,
 			);
 			path = AFNetworkLayer;
 			sourceTree = "<group>";
@@ -114,6 +120,7 @@
 				676BB669229075980022E577 /* Sources */,
 				676BB66A229075980022E577 /* Frameworks */,
 				676BB66B229075980022E577 /* Resources */,
+				458665020021BDDAC9DCE25C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,12 +168,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181247D422A65F5E0076FAAF /* Network.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		458665020021BDDAC9DCE25C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFNetworkLayer/Pods-AFNetworkLayer-resources.sh",
+				"${PODS_ROOT}/YandexMapKit/YandexMapKit.framework/Versions/A/Resources/YandexMapKit.bundle",
+				"${PODS_ROOT}/YandexMapKitSearch/YandexMapKitSearch.framework/Versions/A/Resources/YandexMapKitSearch.bundle",
+				"${PODS_ROOT}/YandexRuntime/YandexRuntime.framework/Versions/A/Resources/YandexRuntime.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKit.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMapKitSearch.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexRuntime.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFNetworkLayer/Pods-AFNetworkLayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E99431B4A7AD9C27AA260F03 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,11 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181247DA22A665AC0076FAAF /* BaseApiRouter.swift in Sources */,
 				676BB6812290768E0022E577 /* ApiClient.swift in Sources */,
-				676BB67D229076580022E577 /* Post.swift in Sources */,
+				181247DB22A665AC0076FAAF /* ApiConfiguration.swift in Sources */,
 				676BB67F229076690022E577 /* ApiError.swift in Sources */,
-				676BB6792290760B0022E577 /* Constants.swift in Sources */,
-				676BB67B2290762F0022E577 /* ApiRouter.swift in Sources */,
+				181247DC22A665AC0076FAAF /* ApiConstants.swift in Sources */,
+				181247D922A665AC0076FAAF /* BaseApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

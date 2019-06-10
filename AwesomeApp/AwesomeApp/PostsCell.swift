@@ -38,7 +38,8 @@ public class PostsCell: UITableViewCell, Identifiable {
         contentView.addSubview(descriptionLabel)
         
         titleLabel.snp.makeConstraints { (maker) in
-            maker.leading.trailing.equalTo(contentView).offset(16)
+            maker.leading.equalTo(contentView).offset(16)
+            maker.trailing.equalTo(contentView).offset(-16)
             maker.top.equalTo(contentView).offset(8)
             maker.bottom.equalTo(descriptionLabel.snp.top).offset(-8)
         }

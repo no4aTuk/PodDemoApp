@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import SnapKit
+import YandexMapKit
 
 class ViewController: UIViewController {
     
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     override func loadView() {
         super.loadView()
         view.backgroundColor = .white
+        let map = YMKPoint(latitude: 20, longitude: 20)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -52,7 +54,6 @@ class ViewController: UIViewController {
     }
     
     private func bindTableView() {
-        tableView.estimatedRowHeight = 50
         viewModel.posts.asObservable().bind(to: tableView.rx.items(cellIdentifier: PostsCell.identifier, cellType: PostsCell.self)) { row, element, cell in
             cell.setup(title: element.title, description: element.body)
         }.disposed(by: dispodeBag)
